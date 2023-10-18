@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="header">
+    <div id="cabecalho">
+      <div id="cab-logo">
+        <div id="logo">
+          <img src="../img/magister.png" alt="" srcset="">
+        </div>
+        <div id="title">
+          <p>Portal</p>
+        </div>
+      </div>  
+    </div>
+    <div id="menu-login">
+      <div id="menu">
+        <a href="">Graduação</a>
+        <a href="">Protocolo</a>
+        <a href="">Extensão</a>
+        <a href="">Polo EAD</a>
+      </div>
+      <div id="linhav"></div>
+      <div id="logo" >
+        <div id="imglogo">
+          <img src="../img/1-removebg-preview.png" alt="">
+          <div id="poligono"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="corpo">
+    <div id="informacoes">
+      <p>Avisos</p>
+      <div id="quadroavisos">
+        <div class="slideshow-container">
+          <div class="mySlides">
+              <img src="../img/im1.png" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <img src="../img/img2.jpeg" style="width:100%">
+          </div>
+          <div class="mySlides">
+              <img src="../img/img3.png" style="width:100%" >
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+      <div id="quadrosistemas">
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 7000); // Change image every 2 seconds
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+body{
+    height: 600px;
+    margin: 10px !important;
+    }
+
+#logo{
+    border-radius: 100%;
+    width: 25%;
+    margin-bottom: 5%;
+}
+
+#usuario{
+    width: 50%;  
+}
+
+#senha{
+    margin-top: 5%;
+    width: 50%;
+}
+#button{
+    margin-top: 5%;
+    width: 20%;
+}
+
+#colum-img{
+    height: 600px
+}
+
+#img{
+    height: 103%;
+    margin-left: 19%;
+    width:100%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+    /* For tablets: */
+    
+    .col-s-1 {width: 30%;
+    height: 320%;
+    padding-top: 10%;
+    text-align: center;}
+
+    
+    .col-s-2 {padding:0%;
+    height: 300px;
+    width: 20%;}
+
+    #rideside{
+        height: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 868px) {
+    /* For desktop: */
+    
+    .col-1 {width: 50%;
+    padding-top: 15%;
+    }
+
+    .col-2 {
+    width: 50%;
+    
+    }
+
+
+
+}
