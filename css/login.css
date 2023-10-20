@@ -1,6 +1,6 @@
 body{
-    height: 600px;
-    margin: 10px !important;
+    height: 100vh;
+    /*border: red solid 2px;*/
     }
 
 #logo{
@@ -8,11 +8,9 @@ body{
     width: 25%;
     margin-bottom: 5%;
 }
-
 #usuario{
     width: 50%;  
 }
-
 #senha{
     margin-top: 5%;
     width: 50%;
@@ -22,15 +20,6 @@ body{
     width: 20%;
 }
 
-#colum-img{
-    height: 600px
-}
-
-#img{
-    height: 103%;
-    margin-left: 19%;
-    width:100%;
-}
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -40,18 +29,20 @@ body{
 @media only screen and (min-width: 700px) {
     /* For tablets: */
     
-    .col-s-1 {width: 30%;
-    height: 320%;
-    padding-top: 10%;
-    text-align: center;}
-
-    
-    .col-s-2 {padding:0%;
-    height: 300px;
-    width: 20%;}
-
-    #rideside{
-        height: 100%;
+    .col-s-1 {
+    width: 50%;
+    height: 100vh;
+    padding-top: 15%;
+    text-align: center;
+    background-size: cover;
+    background-color: white;
+    }
+    .col-s-2 {
+    width: 50%;
+    height: 100vh;
+    background-image: url(../img/right_sideimagemlogin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     }
     
 }
@@ -59,15 +50,22 @@ body{
 @media only screen and (min-width: 868px) {
     /* For desktop: */
     
-    .col-1 {width: 50%;
-    padding-top: 15%;
+    .col-1 {
+    width: 50%;
+    height: 100vh;
+    padding-top: 10%;
+    text-align: center;
+   
+    background-size: cover;
+    background-color: white;
     }
 
     .col-2 {
     width: 50%;
-    
+    height: 100vh;
+    background-image: url(../img/right_sideimagemlogin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     }
-
-
 
 }
