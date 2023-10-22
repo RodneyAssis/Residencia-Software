@@ -18,6 +18,13 @@ body{
     margin-top: 5%;
     width: 20%;
 }
+#outrosServicos{
+    margin-top: 5%;
+}
+#imgOS{/*ID da imgem que leva de volta para a página OUtros Serviços*/
+    border: 1px solid rgb(53, 43, 43, 0.219);
+    border-radius: 30%;
+}
 
 /* For mobile phones: */
 @media only screen and (min-width: 10px) {
@@ -64,9 +71,8 @@ body{
     .col-1 {
     width: 50%;
     height: 100vh;
-    padding-top: 10%;
+    padding-top: 8%;
     text-align: center;
-   
     background-size: cover;
     background-color: white;
     }

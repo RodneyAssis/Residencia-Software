@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #F8F7F7;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /*INICIO CABEÇALHO */
@@ -20,31 +26,15 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#cabecalho {
-  display: flex;
-  flex-direction: row;
-}
-
-#cab-logo {
-  margin: 0;
-  padding: 0;
-  padding-left: 7px;
+#cab-logo{
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-#logo{
-  display: flex;
-  flex-direction: row;
-  border: none;
-  background-color: transparent;
-}
-
 #logo img {
   border-radius: 100%;
   height: 65px;
-
 }
 
 #title{
@@ -55,7 +45,7 @@ body {
 }
 
 #title p{
-  padding-left: 17px;
+  margin-left: 20%;
   color: #FBFBFB;
   font-feature-settings: "salt";
   font-family: 'Inter', sans-serif;
@@ -71,6 +61,10 @@ body {
   
 }
 
+#title-smartphone{
+  visibility: hidden;
+}
+
 #menu-login {
   display: flex;
   flex-direction: row;
@@ -82,7 +76,7 @@ body {
   align-items: center;
   color: #FBFBFB;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 100%;
   font-family: 'Inter';
   padding: 0 10px
 }
@@ -121,6 +115,8 @@ body {
 /*INICIO CORPO*/
 
 #corpo {
+  width: auto;
+  height: 91vh;
   margin: auto;
   padding: auto;
   display: flex;
@@ -129,9 +125,9 @@ body {
 }
 
 #informacoes {
+  height: 80%;
   margin-top: 32px;
   width: 60vw;
-  height: 580px;
   background-color: #234E98;
   border-radius: 10px;
   border: #fff solid 4PX;
@@ -139,20 +135,30 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: max-content;
 }
 
 #informacoes p {
+  padding-top: 10px;
+  padding-bottom: 18px;
   font-family: 'Inter';
   color: #fff;
   font-size: 18px;
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
-  
+}
+
+#quadroinformacoes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 60%;
 }
 
 #quadroavisos {
   background-color: #fff;
   width: 80%;
-  height: 280px;
+  height: 60%;
   box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -164,17 +170,6 @@ body {
   border-radius: 5px;
 }
 
-.mySlides {
-  display: none
-}
-
-img {
-  vertical-align: middle;
-}
-
-.cursor-pointer{
-  cursor: pointer;
-}
 
 @media (max-width: 720px) {
   #header{
@@ -203,20 +198,129 @@ img {
     align-items: center;
   }
   
+  #cab-logo{
+    height: 100%;
+  }
+
   #menu {
     display: none;
   }
-
-  #cab-logo {
-    height: 50px;
-    border: solid black;
-  }
-
-  #cab-logo img {
-    height: 50px;
-  }
-
-  #cab-logo {
-    
-  }
 }
+
+@media (max-width: 720px) {
+  /*Inicio cabeçalho smartphone*/
+    #header{
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 28px;
+      background-color: #234E98;
+      width: auto;
+      height: 55px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      align-items: center;
+    }
+    
+    
+    #cab-logo {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    #menu {
+      display: none;
+    }
+  
+    #cab-logo {
+      height: 50px;
+    }
+  
+    #cab-logo img {
+      height: 50px;
+    }
+  
+    #title{
+      display: none;
+    }
+  
+    #title-smartphone{
+      visibility:visible;
+    }
+  
+    #title-smartphone p{
+      display: flex;
+      color: #FBFBFB;
+      font-feature-settings: "salt";
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-shadow: 
+      -2px -2px 0 #000,  
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000; /* Configuração do contorno */
+    }
+  
+    #linhav{
+      display: none;
+    }
+  
+    #imglogo {
+      display: none;
+    }
+  
+    .hamburger {
+      width: 50px;
+      height: 26px;
+      display: flex;
+      padding: 0 10px;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  
+  .bar {
+      width: 100%;
+      height: 10px;
+      background-color: #F8F7F7;
+      margin: 3px 0;
+      padding: 0.5px 0;
+      border-radius: 2px;
+  }
+
+  /*Fim cabecalho*/
+  /*Inicio corpo*/
+  #informacoes {
+    max-width: 100%;
+    max-height: 100%;
+    width: 94vw;
+    display: inline;
+  }
+
+  #informacoes p {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #quadroinformacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 95%;
+  }
+
+  #quadroavisos {
+    justify-content: center;
+    width: 83vw;
+    height: 80%;
+  }
+  }
