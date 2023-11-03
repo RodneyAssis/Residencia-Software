@@ -58,33 +58,19 @@
 <div class="corpo2">
     
        <a href="">
-    <div class="imagem-container2" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)">
+    <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)">
       <img id="minha-imagem" src="../img/avaliacao.png" alt="Imagem Avaliacao">
-      <div class="overlay"></div>
+      <div class="overlay2"></div>
     </div>
   </a>
   <a href="">
-    <div class="imagem-container2" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)">
+    <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)">
       <img id="minha-imagem" src="../img/outros.png" alt="Imagem Outros">
-      <div class="overlay"></div>
+      <div class="overlay2"></div>
     </div>
   </div>
   </a>
-  
-  <script>
-      function mudarCor(container) {
-        
-        container.querySelector('img').style.filter = "brightness(0.8) contrast(1.2) saturate(2) hue-rotate(200deg)";
-       
-        container.querySelector('.overlay').style.opacity = 0.4;
-      }
-    
-      function restaurarCor(container) {
-        
-        container.querySelector('img').style.filter = "none";
-        
-        container.querySelector('.overlay').style.opacity = 0;
-      }
-    </script>
+
 </body>
+<script src="../js/graduacao.js"></script>
 </html>
