@@ -172,6 +172,7 @@ p {
 
 
 @media (max-width: 720px) {
+  /*inicio cabecalho smartphone*/
   #header{
     align-items: center;
     display: flex;
