@@ -1,5 +1,5 @@
 .top{
-    padding-top: 3%;
+  padding-top: 3%;
 }
 
 h3{
@@ -28,30 +28,33 @@ h3{
 
 /* For mobile phones: */
 [class*="col-"] {
-    width: 100%;
-    padding-left: 27%;
-  }
+  width: 100%;
+  padding-left: 27%;
+}
+h3{
+  margin-top: 10%;
+}
+
+@media only screen and (min-width: 700px) {
+  /* For tablets: */
   
-  @media only screen and (min-width: 700px) {
-    /* For tablets: */
-    
-    .col-s-1 {width: 25%; padding-left: 2%; margin-left: 8%;}
-    .col-s-2 {width: 25%; padding-left: 2%;}
-    .col-s-3 {width: 25%; padding-left: 2%;}
-  }
+  .col-s-1 {width: 25%; padding-left: 2%; margin-left: 8%;}
+  .col-s-2 {width: 25%; padding-left: 2%;}
+  .col-s-3 {width: 25%; padding-left: 2%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
   
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    
-    .col-1 {width: 30%; padding-left: 2%;}
-    .col-2 {width: 30%; padding-left: 2%;}
-    .col-3 {width: 30%; padding-left: 2%;}
-  }
+  .col-1 {width: 30%;}
+  .col-2 {width: 30%;}
+  .col-3 {width: 30%;}
+}
 /*CSS resposivel: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 
-  .row{
-    --bs-gutter-x: 0rem !important;
-  }
+.row{
+  --bs-gutter-x: 0rem !important;
+}
 
   
 

@@ -12,7 +12,6 @@ body{
     height: 7vh;
     border-radius: 5px;
     border-color: rgb(127, 127, 209);
-  
 }
 #senha{
     margin-top: 5%;
@@ -20,19 +19,16 @@ body{
     height: 7vh;
     border-radius: 5px;
     border-color: rgb(127, 127, 209);
-  
 }
 #button{
-    margin-top: 5%;
-    width: 20%;
-    border-radius: 5px;
-    border-color: rgb(127, 127, 209);
+    margin-top: 2%;
+ 
 }
 #button:hover{
     transform: translateY(5px);
 }
 #outrosservicos{
-    margin-top: 3%;
+    margin-top: 2%;
 }
 #outrosservicos:hover {
     transform: translateY(5px); /* Move o botão 5 pixels para baixo no eixo Y no hover */
@@ -41,6 +37,12 @@ body{
 #imgOS{/*ID da imgem que leva de volta para a página OUtros Serviços*/
     border: 1px solid rgb(53, 43, 43, 0.219);
     border-radius: 30%;
+}
+
+form{
+    margin-left: 25%;
+    width: 50%;
+    align-items: center;
 }
 
 /* For mobile phones: */
@@ -52,7 +54,6 @@ body{
      padding-top: 7%;
      text-align: center;
      background-size: cover;
-     background-color: white;
     }
 
     .col2{
@@ -70,7 +71,6 @@ body{
     padding-top: 15%;
     text-align: center;
     background-size: cover;
-    background-color: white;
     }
     .col-s-2 {
     width: 50%;
@@ -91,7 +91,6 @@ body{
     padding-top: 8%;
     text-align: center;
     background-size: cover;
-    background-color: white;
     }
 
     .col-2 {
