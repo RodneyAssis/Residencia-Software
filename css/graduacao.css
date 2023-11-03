@@ -115,10 +115,11 @@ body {
   }
   .imagem-container {
     position: relative;
-    width: 274px;
     transition: filter 0.3s;
     cursor: pointer;  
-    margin: 50px;
+    margin: 20px;
+    margin-bottom:0px; 
+    
   }
   .corpo {
     height: 100%;
@@ -128,36 +129,55 @@ body {
     align-items: center
   }
   .corpo img {
-    width: 274px;
-    height: 273px;
+    width: 204px;
+    height: 203px;
     border-radius: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .corpo2 img {
-    width: 274px;
-    height: 273px;
+    width: 204px;
+    height: 203px;
     border-radius: 10%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 65px;
+    margin-left: 65px;
   }
   
   .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 274px;
-    height: 273px;
+    width: 204px;
+    height: 203px;
     background: linear-gradient(to bottom, #0000FF, #000080); 
     opacity: 0; 
     transition: opacity 0.3s;
     border-radius: 10%;
+    margin-right: 40px;
+    margin-left: 40px;
   }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 204px;
+    height: 203px;
+    background: linear-gradient(to bottom, #0000FF, #000080); 
+    opacity: 0; 
+    transition: opacity 0.3s;
+    border-radius: 10%;
+    margin-right: 65px;
+    margin-left: 65px;
+  }
+
   .imagem-container2 {
     position: relative;
-    width: 274px;
     transition: filter 0.3s;
     cursor: pointer;  
-    margin:50px;
+    margin-top: 25px;
   }
  
   .corpo2 {
@@ -303,6 +323,10 @@ body {
  flex: 0 0 calc(33.33% - 20px); /* Isso criará três colunas com algum espaço entre elas */
 margin-bottom: 20px;
 }
+
+
+  
+
 
 } 
     
