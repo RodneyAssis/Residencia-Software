@@ -23,7 +23,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilos para o menu de navegação */
+/* Estilos para o menu de navegação (Vamos trocar) */
 .menu {
     background-color: var(--color-blue);
     width: 100%;
@@ -90,7 +90,7 @@ body {
 
 /* Estilos para o campo de busca */
 .search-process input {
-    width: 100%;
+    width:45%;
     padding: 0.5rem;
     margin-right: 20rem;
     border-bottom: #424242;
@@ -104,18 +104,32 @@ body {
 
 /* Estilos para os botões Criar e Acompanhar */
 .protocol-buttons{
-    background-color: var(--color-blue);
-    color: var(--color-white);
     border: none;
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+ 
 }
 
-.create-protocol button:hover,
-.track-process button:hover {
-    background-color: var(--color-blue);
+#create-protocol,
+#track-process {
+    background-color: #234E98;
+    outline: none;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#create-protocol:hover,
+#track-process:hover {
+    background-color: #2a5eb8;
+}
+
+#create-protocol:active,
+#track-process:active {
+    color: #fff;
+    background-color: #20488b;
 }
 
 /* Estilos para a seção de Processos */
