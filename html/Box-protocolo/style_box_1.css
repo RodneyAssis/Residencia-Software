@@ -1,0 +1,16 @@
+.btn-info {
+    margin-bottom: 20px;
+    width: 10rem;
+    align-items: center;
+    margin-left: 3.88rem;
+    background-color: rgb(255, 255, 255)
+    
+}
+
+.card {
+    background-color: rgb(68, 92, 226)
+}
+
+.card-title {
+    text-align: center;
+}
