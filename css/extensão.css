@@ -286,7 +286,7 @@
     margin-right:10px;
     }
     
-    .accordion input:checked ~ h1 ~ div.texto{ max-height:200px; }
+    .accordion input:checked ~ h1 ~ div.texto{ max-height:800px; }
     
     .accordion a{ color:#2d81da; }
     /* direitos autorais do acordeon: https://www.loopnerd.com.br/codigos-css-prontos/como-fazer-um-accordion-com-html-e-css/*/
