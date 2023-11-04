@@ -69,6 +69,10 @@ body {
     
   }
   
+  #title-smartphone{
+    visibility: hidden;
+  }
+
   #menu-login {
     display: flex;
     flex-direction: row;
@@ -323,16 +327,162 @@ body {
  flex: 0 0 calc(33.33% - 20px); /* Isso criará três colunas com algum espaço entre elas */
 margin-bottom: 20px;
 }
-
-
-  
-
-
-
-
 } 
-    
-   
-    
   
- 
+
+@media (max-width: 720px) {
+  /*inicio cabecalho smartphone*/
+  #header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 28px;
+    background-color: #234E98;
+    width: auto;
+    height: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  #cabecalho {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #cab-logo {
+    margin: 0;
+    padding: 0;
+    padding-left: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #cab-logo{
+    height: 100%;
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  /*Inicio cabeçalho smartphone*/
+
+    #header{
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 28px;
+      background-color: #234E98;
+      width: auto;
+      height: 55px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      align-items: center;
+    }
+    
+    
+    #cab-logo {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    #menu {
+      display: none;
+    }
+  
+    #cab-logo {
+      height: 50px;
+    }
+  
+    #cab-logo img {
+      height: 50px;
+    }
+  
+    #title{
+      display: none;
+    }
+  
+    #title-smartphone{
+      visibility:visible;
+    }
+  
+    #title-smartphone p{
+      display: flex;
+      color: #FBFBFB;
+      font-feature-settings: "salt";
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-shadow: 
+      -2px -2px 0 #000,  
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000; /* Configuração do contorno */
+    }
+  
+    #linhav{
+      display: none;
+    }
+  
+    #imglogo {
+      display: none;
+    }
+  
+    .hamburger {
+      width: 50px;
+      height: 26px;
+      display: flex;
+      padding: 0px;
+      flex-direction: column;
+      cursor: pointer;
+      align-items: center;
+  }
+  
+  .bar {
+      width: 60%;
+      height: 10px;
+      background-color: #F8F7F7;
+      margin: 3px 0;
+      padding: 0.5px 0;
+      border-radius: 2px;
+  }
+
+  /*Fim cabecalho*/
+  /*Inicio corpo*/
+  #informacoes {
+    max-width: 100%;
+    max-height: 100%;
+    width: 94vw;
+    display: inline;
+  }
+
+  #informacoes p {
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #quadroinformacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 95%;
+  }
+
+  #quadroavisos {
+    justify-content: center;
+    width: 83vw;
+    height: 200px;
+  }
+  }
