@@ -171,7 +171,27 @@ p {
   border-radius: 5px;
 }
 
+/*Inicio a barra de quadro de sistemas*/
+.figure {
+  display: flex;
+  margin: 0;
+  padding: 0; 
+}
 
+.figure a{
+  text-align: center;
+  padding: 2.5px 5px;
+}
+
+.figure img{
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+}
+
+
+
+/*Inicio mobile*/
 @media (max-width: 720px) {
   /*inicio cabecalho smartphone*/
   #header{
