@@ -164,8 +164,9 @@ p {
 }
 
 #quadrosistemas {
-  background-color: #bdbdbd;
-  margin-top: 45px;
+  display: flex;
+  background-color: #ffffff;
+  margin-top: 50px;
   box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -315,16 +316,10 @@ p {
     flex-direction: row;
     justify-content: center;
     width: auto;
-    height: 95%;
+    height: 65%;
   }
 
   #quadroavisos {
-    justify-content: center;
-    width: 83vw;
-    height: 200px;
-  }
-
-  #quadrosistema {
     justify-content: center;
     width: 83vw;
     height: 200px;
