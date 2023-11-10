@@ -286,9 +286,24 @@
     margin-right:10px;
     }
     
-    .accordion input:checked ~ h1 ~ div.texto{ max-height:800px; }
+    .accordion input:checked ~ h1 ~ div.texto{ max-height:1200px; }
     
     .accordion a{ color:#2d81da; }
+
+    .accordion button {
+        background:#007cff;
+        color:white;
+        font-family:'Arial', sans-serif;
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 10px;
+        border-color: #F8F7F7;
+        position: relative;
+        margin-left: 80%;
+        transition: 0.5s;
+    }
+    .accordion button:hover { background-color:#0762c2; color:#eee003; }
+
     /* direitos autorais do acordeon: https://www.loopnerd.com.br/codigos-css-prontos/como-fazer-um-accordion-com-html-e-css/*/
     /*Fim do acordeon/*
     
