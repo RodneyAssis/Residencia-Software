@@ -220,7 +220,26 @@
     }
     /*Fim cabecalho*/
     
-    
+    /*Barra das atividades inscritas*/
+    #atividadeInscrita{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: #007bffa4;
+        border-radius: 5px;
+        margin-left: 5%;
+        margin-right: 5%;
+        color: white
+    }
+
+    h5{
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        border: 0.5px solid rgba(0, 0, 0, 0.521);
+        background-color: #0761c296;
+    }
+    /*Fim da barra de atividades inscritas*/
+
     /*inicio do acordeon*/
     .accordion{
     max-width: 90%;
