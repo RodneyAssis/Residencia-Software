@@ -5,81 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Protocolo</title>
+    <style>
+        
+        @media screen and (max-width: 768px) {
+            
+            #cab-logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #title-smartphone {
+                display: block;
+            }
+
+            #menu-login {
+                text-align: center;
+            }
+
+            #menu {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            #imglogo {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                margin-top: 10px;
+            }
+
+            
+            .titulo {
+                text-align: center;
+            }
+
+            
+            .protocol__description,
+            .protocol-buttons,
+            .search-process,
+            .processes,
+            .other-section {
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!--Menu (Trocar com o Modelo Oficial)-->
-    <div id="header">
-        <div id="cab-logo">
-          <div id="logo">
-            <img src="../img/magister.png" alt="" srcset="">
-          </div>
-          <div id="title">
-            <p>Protocolo</p>
-          </div>
-        </div> 
-        <div id="title-smartphone">
-          <p>Protocolo</p>
-        </div>
-        <div id="menu-login">
-          <div id="menu">
-            <a href="../html/portal.html">Portal</a>
-            <a href="../html/graduacao.html">Graduação</a>
-            <a href="../html/extensao.html">Extensão</a>
-            <a href="">Polo EAD</a>
-          </div>
-    
-          <div id="linhav"></div>
-    
-          <div id="imglogo">
-            <img src="../img/1-removebg-preview.png" alt="">
-            <div id="poligono"></div>
-          </div>
-          <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        </div>
-      </div>
-    
 
-    <!--Protocolo-->
-    <h1 class="titulo">Protocolo</h1>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Protocolo</title>
+    </head>
+    <body>
+        <!--Menu (Trocar com o Modelo Oficial)-->
+        <div id="header">
+            <div id="cab-logo">
+              <div id="logo">
+                <img src="../img/magister.png" alt="" srcset="">
+              </div>
+              <div id="title">
+                <p>Protocolo</p>
+              </div>
+            </div> 
+            <div id="title-smartphone">
+              <p>Protocolo</p>
+            </div>
+            <div id="menu-login">
+              <div id="menu">
+                <a href="../html/portal.html">Portal</a>
+                <a href="../html/graduacao.html">Graduação</a>
+                <a href="../html/extensao.html">Extensão</a>
+                <a href="">Polo EAD</a>
+              </div>
+        
+              <div id="linhav"></div>
+        
+              <div id="imglogo">
+                <img src="../img/1-removebg-preview.png" alt="">
+                <div id="poligono"></div>
+              </div>
+              <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            </div>
+          </div>
+        
     
-    <section class="protocol__description">
-        <div class="blue-box">
-            <p>O Protocolo é o setor da FE responsável pela solicitação de
-            abertura de processos, relativos às atividades acadêmicas.</p>
+        <!--Protocolo-->
+        <h1 class="titulo">Protocolo</h1>
+        
+        <section class="protocol__description">
+            <div class="blue-box">
+                <p>O Protocolo é o setor da FE responsável pela solicitação de
+                abertura de processos, relativos às atividades acadêmicas.</p>
+            </div>
+        </section>
+    
+        <!--Botões do Protocolo-->
+        <div class="protocol-buttons">
+            <button id="create-protocol">Criar novo protocolo</button>
+            <br> <!--Espaço-->
+            <br> <!--Espaço-->
+            <button id="track-process">Acompanhe seu processo</button>
         </div>
-    </section>
-
-    <!--Botões do Protocolo-->
-    <div class="protocol-buttons">
-        <button id="create-protocol">Criar novo protocolo</button>
+        
         <br> <!--Espaço-->
-        <br> <!--Espaço-->
-        <button id="track-process">Acompanhe seu processo</button>
-    </div>
     
-    <br> <!--Espaço-->
+        <!--Barra de Pesquisa-->
+        <head>
+          <style>
+        
+            .image-placeholder {
+              height: 25px;
+              background-image: url('../img/LUPA.png');
+              background-size: 20px 20px; /* Tamanho da imagem */
+              background-repeat: no-repeat;
+              padding-left: 20px;
+              border-radius: 90px;
+            }  
 
-    <!--Barra de Pesquisa-->
-    <section class="search-process">
-        <div>
-            <input type="text" placeholder="Buscar processo">
-        </div>
-    </section>
-
-    <section class="processes">
-        <div class="blue-box">
-            <h2>Processos</h2>
-            <!-- Listar os processos -->
-        </div>
-    </section>
-
-    <section class="other-section">
-        <!-- Outras seções da página -->
-    </section>
+          </style>
+        </head>
+        <body>
+          <input type="text" class="image-placeholder" placeholder="Buscar Processos">
+        </body>
+    
+        <section class="processes">
+            <div class="blue-box">
+                <h2>Processos</h2>
+                <!-- Listar os processos -->
+            </div>
+        </section>
+    
+        <section class="other-section">
+            <!-- Outras seções da página -->
+        </section>
+    
+    </body>
+    </html>
 
 </body>
 </html>
+
+
