@@ -27,9 +27,32 @@ h3{
 }
 
 /* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-  padding-left: 27%;
+@media only screen and (min-width: 10px) {
+
+  #col-img{
+    width: 50%;
+  }
+
+  #col-login{
+    width: 30%;
+    border-radius: 100%;
+  }
+
+  #hiden{
+    display: none;
+  }
+  .col1{
+    width: 100%;
+    padding-left: 27%;
+  }
+  .col2{
+    width: 100%;
+    padding-left: 27%;
+  }
+  .col3{
+    width: 100%;
+    padding-left: 27%;
+  }
 }
 h3{
   margin-top: 10%;
@@ -38,14 +61,34 @@ h3{
 @media only screen and (min-width: 700px) {
   /* For tablets: */
   
+  #col-img{
+    width: 30%;
+  }
+  #hiden{
+    display:block;
+  }
+  #col-login{
+    width: 20%;
+    border-radius: 100%;
+  }
+
   .col-s-1 {width: 25%; padding-left: 2%; margin-left: 8%;}
   .col-s-2 {width: 25%; padding-left: 2%;}
   .col-s-3 {width: 25%; padding-left: 2%;}
 }
 
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   
+  #col-img{
+    width: 30%;
+  }
+  #col-login{
+    width: 15%;
+    border-radius: 100%;
+  }
+
   .col-1 {width: 30%;}
   .col-2 {width: 30%;}
   .col-3 {width: 30%;}
