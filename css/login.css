@@ -28,7 +28,6 @@ body{
 }
 
 form{
-    padding-top: 15%;
     margin-left: 25%;
     width: 50%;
     align-items: center;
@@ -54,6 +53,14 @@ form{
     .col2{
      width: 0%;
      height: 0vh;
+    }
+
+    #hearderforms {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 }
 

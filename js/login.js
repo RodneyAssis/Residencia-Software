@@ -24,7 +24,8 @@ function verificar() {
         Swal.fire({
             title: "ERRO!",
             text: "Usuário ou senha inválidos",
-            icon: "error"
+            icon: "error",
+            confirmButtonColor: "#007BFF"  // Cor azul em formato hexadecimal
         });
     }
 }
