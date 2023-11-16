@@ -1,3 +1,5 @@
+
+
 function outrosservicos() {
     let out = window.document.getElementById("outrosservicos")
     outrosservicos.style.transform = 'translateY(5px)';
@@ -17,8 +19,14 @@ function verificar() {
 
     if (usuarioInput === usuario && senhaInput === senha) {
        window.location.href = "../html/portal.html";
-       
+    
     } else {
-        window.alert("Usuário ou senha incorretos. Tente novamente!");
+        Swal.fire({
+            title: "ERRO!",
+            text: "Usuário ou senha inválidos",
+            icon: "error",
+            confirmButtonColor: "#007BFF"  // Cor azul em formato hexadecimal
+        });
     }
 }
+
