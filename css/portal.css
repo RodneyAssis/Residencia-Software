@@ -96,6 +96,8 @@ p {
   cursor: pointer; /* Adiciona a seta do cursor para indicar clicabilidade */
 }
 
+
+
 #imglogo img {
   height: 55px;
 }
@@ -110,6 +112,8 @@ p {
   transition: transform 0.3s, border-bottom 0.3s;
 }
 
+
+
 #dropdown-content {
   top: 70px;
   right: 0px;
@@ -123,7 +127,8 @@ p {
 
 #dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 7px 16px;
+  font-size: 12px;
   text-decoration: none;
   display: block;
 }

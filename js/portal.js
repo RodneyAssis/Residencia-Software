@@ -8,11 +8,13 @@ function girarPoligono() {
     
     // Aplica a rotação correspondente
     poligono.style.transform = 'rotate(' + (rotacaoAtual * 180) + 'deg)';
-}
 
-function toggleDropdown() {
     var dropdownContent = document.getElementById("dropdown-content");
-    dropdownContent.style.display = (dropdownContent.style.display === "none") ? "block" : "none";
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
 }
 
 function atualizarDados() {
