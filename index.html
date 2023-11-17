@@ -7,7 +7,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/outrosServicos.css">
+  <link rel="stylesheet" href="../css/outrosServicos.css">
 
 </head>
 <body>
@@ -15,14 +15,15 @@
     <div class="container text-center top">
       <div class="row align-items-center">
         <div class="col">
-          <img src="img/Customer relationship management-bro.png" width="30%">
+          <img src="../img/Customer relationship management-bro.png"
+          id="col-img">
         </div>
         <div class="col">
           <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Outros Serviços</h1>
         </div>
         <div class="col" style="cursor: pointer;" onmousemove="login()" id="login">
-          Login
-          <a href="/html/login.html"><img src="img/magister.png" width="15%" style="border-radius: 100%;"></a>
+         <p id="hiden">Login</p>
+          <a href="../html/login.html"><img src="../img/magister.png" id="col-login"></a>
         </div>
       </div>
   </header>
@@ -30,21 +31,21 @@
   <hr>
 
   <div class="row align-items-center top">
-    <div class= "col-s-1 col-1" onmousemove="extencao()" id="extencao">
+    <div class= "col-s-1 col-1 col1" onmousemove="extencao()" id="extencao">
       <h3>Extensão</h3>
-      <a href=""><img src="img/Dictionary-rafiki.png" width="70%" class="borda"></a>
+      <a href=""><img src="../img/Dictionary-rafiki.png" width="70%" class="borda"></a>
     </div>
-    <div class= "col-s-2 col-2" onmousemove="boletos()" id="boletos">
+    <div class= "col-s-2 col-2 col2" onmousemove="boletos()" id="boletos">
       <h3>Boletos</h3>
-      <a href=""><img src="img/Invoice-cuate.png" width="70%" class="borda"></a>
+      <a href=""><img src="../img/Invoice-cuate.png" width="70%" class="borda"></a>
     </div>
-    <div class= "col-s-3 col-3" onmousemove="protocolo()" id="protocolo">
+    <div class= "col-s-3 col-3 col3" onmousemove="protocolo()" id="protocolo">
       <h3>Protocolo</h3>
-      <a href=""><img src="img/Research paper-amico.png" width="70%" class="borda"></a>
+      <a href=""><img src="../img/Research paper-amico.png" width="70%" class="borda"></a>
     </div>
   </div>
 
-  <script src="js/outrosservicos.js"></script>
+  <script src="../js/outrosservicos.js"></script>
 </body>
 
 </html>

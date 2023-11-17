@@ -87,18 +87,13 @@ p {
   height: 60px; /* Altura da linha vertical */
 }
 
-#poligono {
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent; /* Lado esquerdo */
-    border-right: 4px solid transparent; /* Lado direito */
-    border-bottom: 6px solid #D9D9D9; /* Lado inferior e cor de preenchimento */
-}
+
 
 #imglogo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer; /* Adiciona a seta do cursor para indicar clicabilidade */
 }
 
 #imglogo img {
@@ -106,8 +101,32 @@ p {
 }
 
 #poligono {
-  align-items: center;
-  margin-left: 3px;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid #D9D9D9;
+  cursor: pointer;
+  transition: transform 0.3s, border-bottom 0.3s;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 /*FIM CABEÇALHO*/
