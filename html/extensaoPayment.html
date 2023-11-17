@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extensão</title>
     <!--Link do css-->
-    <link href="../css/extensão.css" rel="stylesheet">
+    <link href="../css/extensaoPayment.css" rel="stylesheet">
 </head>
 <body>
     <div id="header">
@@ -43,6 +43,35 @@
       </div>
 
       <h1>Dados do crachá</h1>
+
+     <!-- Adicionando o formulário de inscrição -->
+<div id="inscricaoForm">
+    <h2>Dados do crachá</h2>
+    <form action="#" method="post">
+        <label for="atividade">Atividade:</label>
+        <input type="text" id="atividade" name="atividade" required>
+
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa" name="empresa">
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo">
+
+        <label for="tipoParticipacao">Tipo de Participação:</label>
+        <select id="tipoParticipacao" name="tipoParticipacao" required>
+            <option value="graduacao">Aluno da Graduação</option>
+            <option value="posgraduacao">Aluno da Pós-Graduação</option>
+            <option value="ead">Aluno EAD</option>
+            <option value="egresso">Aluno Egresso</option>
+            <option value="mestradoDoutorado">Aluno Mestrado/Doutorado</option>
+            <option value="funcionario">Funcionário</option>
+            <option value="scf">Outros Sistemas (SCF)</option>
+            <option value="professor">Professor</option>
+        </select>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</div>
 
       
 </body>
