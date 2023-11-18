@@ -24,20 +24,37 @@
       <div id="menu">
         <a href="../html/graduacao.html">Graduação</a>
         <a href="../html/protocolo.html">Protocolo</a>
-        <a href="">Extensão</a>
+        <a href="../html/extensao.html">Extensão</a>
         <a href="">Polo EAD</a>
       </div>
 
       <div id="linhav"></div>
 
-      <div id="imglogo">
+      <div id="imglogo" onmouseenter="userlogo()">
         <img src="../img/1-removebg-preview.png" alt="">
-        <div id="poligono"></div>
+          <div id="poligono"></div>
+          <div id="dropdown-content" onmouseenter="userlogo()">
+            <a href="#">Dados pessoais</a>
+            <a href="#" onclick="atualizarDados()">Atualizar Dados Pessoais</a>
+            <a href="#" onclick="alterarSenha()">Alterar Senha</a>
+            <a href="#" onclick="posGraduacao()">Pós-Graduação</a>
+            <a href="#" onclick="posGraduacao()">Autenticação de 2 fatores</a>
+            <a href="#" onclick="posGraduacao()">Sair</a>
+          </div>
       </div>
-      <div class="hamburger">
+
+      <div class="hamburger" onclick="userlogo2()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
+        <div id="dropdown-content2" onclick="userlogo2()">
+          <a href="#">Dados pessoais</a>
+          <a href="#">Atualizar Dados Pessoais</a>
+          <a href="#">Alterar Senha</a>
+          <a href="#">Pós-Graduação</a>
+          <a href="#">Autenticação de 2 fatores</a>
+          <a href="#">Sair</a>
+        </div>
     </div>
     </div>
   </div>
@@ -91,5 +108,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
   crossorigin="anonymous"></script>
+  <script src="../js/portal.js"></script>
 </body>
 </html>

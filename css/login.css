@@ -77,7 +77,7 @@ form{
     .col-s-2 {
     width: 50%;
     height: 100vh;
-    background-image: url(../img/right_sideimagemlogin.jpg);
+    background-image: url(../img/imglogin/right_sideimagemlogin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     }
@@ -98,7 +98,7 @@ form{
     .col-2 {
     width: 50%;
     height: 100vh;
-    background-image: url(../img/right_sideimagemlogin.jpg);
+    background-image: url(../img/imglogin/right_sideimagemlogin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     }  
@@ -117,7 +117,7 @@ form{
         .col-2 {
         width: 50%;
         height: 100vh;
-        background-image: url(../img/right_sideimagemlogin.jpg);
+        background-image: url(../img/imglogin/right_sideimagemlogin.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         }  
