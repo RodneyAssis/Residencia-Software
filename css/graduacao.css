@@ -120,9 +120,9 @@ body {
   .imagem-container {
     position: relative;
     transition: filter 0.3s;
-    cursor: pointer;  
     margin: 20px;
     margin-bottom:0px; 
+    margin-top: 3%;
     
   }
   .corpo {
@@ -162,6 +162,7 @@ body {
     border-radius: 10%;
     margin-right: 40px;
     margin-left: 40px;
+    cursor: pointer;  
   }
   .overlay2 {
     position: absolute;
@@ -175,12 +176,12 @@ body {
     border-radius: 10%;
     margin-right: 65px;
     margin-left: 65px;
+    cursor: pointer;  
   }
 
   .imagem-container2 {
     position: relative;
-    transition: filter 0.3s;
-    cursor: pointer;  
+    transition: filter 0.3s; 
     margin-top: 25px;
   }
  
@@ -191,9 +192,56 @@ body {
     justify-content: center;
     align-items: center
   }
+
+ .menu-flutuante {
+   position: fixed; /* Alterado para fixed para garantir a posição correta na tela */
+   display: none;
+   background-color: white;
+   color: black;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   z-index: 1;
+   max-height: 200px; /* Altura máxima do menu */
+   overflow-y: auto;
+  }
+
+  .menu-flutuante2 {
+   position: fixed; /* Alterado para fixed para garantir a posição correta na tela */
+   display: none;
+   background-color: white;
+   color: black;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   z-index: 1;
+   max-height: 100px; /* Altura máxima do menu */
+   overflow-y: auto;
+  }
     
 
 
+ .menu-flutuante a {
+   display: block; /* Cada link é exibido como um bloco */
+   padding: 5px;
+   color: black;
+   border: 1px solid black;
+   text-decoration: none;
+   text-align: justify;
+ }
+    
+    
+  .menu-flutuante2 a {
+   display: block; /* Cada link é exibido como um bloco */
+   padding: 5px;
+   color: black;
+   border: 1px solid black;
+   text-decoration: none;
+   text-align: justify;
+  }
+    
+
+    
 
 @media (max-width: 768px) { 
 
@@ -312,7 +360,7 @@ body {
 }
 
 .imagem-container {
-   flex: 0 0 calc(33.33% - 20px); /* Isso criará três colunas com algum espaço entre elas */
+ flex: 0 0 calc(33.33% - 20px); /* Isso criará três colunas com algum espaço entre elas */
  margin-bottom: 20px;
 }
 

@@ -42,43 +42,98 @@
       </div>
     </div>
   </div>
-  <div class="corpomain" style="border: solid black;">
+
+  <div class="corpomain">
+
     <div class="corpo">
-      <a href="">
-        <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)">
-          <img id="minha-imagem" src="../img/consulta.png" alt="Imagem Consulta">
-          <div class="overlay"></div>
+
+      <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)" onclick="mostrarMenu(event)">
+        <img id="minha-imagem" src="../img/consulta.png" alt="Sua Imagem">
+        <div class="overlay"></div>
+        <div class="menu-flutuante" id="menuFlutuante">
+          <a href="#">Alocação de Períodos</a>
+          <a href="#">Avisos (Prof/Coord)</a>
+          <a href="#">Cronograma da disciplina</a>
+          <a href="#">Consultas Provas</a>
+          <a href="#">Atividades Complementares</a>
+          <a href="#">Faltas Detalhadas</a>
+          <a href="#">Histórico</a>
+          <a href="#">Horário do Aluno</a>
+          <a href="#">Notas e Faltas</a>
+          <a href="#">Notas em Disciplinas On-line</a>
+          <a href="#">Ofertas por Curso</a>
+          <a href="#">Ofertas por Disciplina</a>
+          <a href="#">Pendências</a>
+          <a href="#">Realocação de Aula</a>
         </div>
-      </a>
-      <a href="">
-        <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)">
-          <img id="minha-imagem" src="../img/matricula.png" alt="Imagem Matricula">
-          <div class="overlay"></div>
+      </div>
+      
+      <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)" onclick="mostrarMenu2(event)">
+        <img id="minha-imagem" src="../img/matricula.png" alt="Sua Imagem">
+        <div class="overlay"></div>
+        <div class="menu-flutuante" id="menuFlutuante2">
+          <a href="#">Aceite de Notas em Disciplinas On-line</a>
+          <a href="#">Acima do Limite de Créditos</a>
+          <a href="#">Alteração Agrupada de Horário</a>
+          <a href="#">Disciplinas Rejeitadas</a>
+          <a href="#">Instruções da matrícula</a>
+          <a href="#">Reserva de Disciplina Paralela</a>
+          <a href="#">Reserva de Vaga</a>
+          <a href="#">Solicitação de Disciplinas</a>
+          <a href="#">Solicitação de Disciplinas Eletivas</a>
+          <a href="#">Termo aditivo Fies</a>
+          <a href="#">Termo aditivo Prouni</a>
+          <a href="#">Inscrição Prova On-line</a>
+          <a href="#">Termo de Acordo</a>
+          <a href="#">Aceite de Notas em Disciplinas Híbridas</a>
         </div>
-      </a>
-      <a href="">
-        <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)">
-          <img id="minha-imagem" src="../img/pagamento.png" alt="Imagem Pagamento">
-          <div class="overlay"></div>
+      </div>
+
+      
+      <div class="imagem-container" onmouseover="mudarCor(this)" onmouseout="restaurarCor(this)" onclick="mostrarMenu3(event)">
+        <img id="minha-imagem" src="../img/pagamento.png" alt="Sua Imagem">
+        <div class="overlay"></div>
+        <div class="menu-flutuante" id="menuFlutuante3">
+          <a href="#">Pagamento de Matrícula</a>
+          <a href="#">Pagamento de Parcelas</a>
+          <a href="#">Parcelas Atrasadas(Semestres Anteriores)</a>
+          <a href="#">Disciplinas Acima do Limite de Créditos, Especiais e Paralelas</a>
+          <a href="#">Comprovante de Pagamento em Cartão</a>
+          <a href="#">Pagamento de Títulos Avulsos</a>
+          <a href="#">Pagamento de Multa da Biblioteca</a>
+          <a href="#">Negociação de Débitos</a>
         </div>
-      </a>
+      </div>
     </div>
+
     <div class="corpo2">
-      <a href="">
-        <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)">
-          <img id="minha-imagem" src="../img/avaliacao.png" alt="Imagem Avaliacao">
-          <div class="overlay2"></div>
+
+      <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)" onclick="mostrarMenu4(event)">
+        <img id="minha-imagem" src="../img/avaliacao.png" alt="Sua Imagem">
+        <div class="overlay2"></div>
+        <div class="menu-flutuante2" id="menuFlutuante4">
+          <a href="#">Avaliação Institucional</a>
+          <a href="#">Avaliação Nominal</a>
+          <a href="#">Avaliação de Matrícula</a>
+          <a href="#">Simulado ENADE</a>
+          <a href="#">Avaliação do Calouro</a>
+          <a href="#">Resultado Avaliação Nominal</a>
+          <a href="#">Avaliação Matriz por Projeto</a>
         </div>
-      </a>
-      <a href="">
-        <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)">
-          <img id="minha-imagem" src="../img/outros.png" alt="Imagem Outros">
-          <div class="overlay2"></div>
+      </div>
+
+
+      <div class="imagem-container2" onmouseover="mudarCor2(this)" onmouseout="restaurarCor2(this)" onclick="mostrarMenu5(event)">
+        <img id="minha-imagem" src="../img/outros.png" alt="Sua Imagem">
+        <div class="overlay2"></div>
+        <div class="menu-flutuante2" id="menuFlutuante5">
+          <a href="#">PBL</a>
+          <a href="#">CEAP</a>
+          <a href="#">Serviços</a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
-
 </body>
 <script src="../js/graduacao.js"></script>
 
