@@ -30,10 +30,10 @@
 
       <div id="linhav"></div>
 
-      <div id="imglogo" onclick="girarPoligono()">
-        <img src="../img/1-removebg-preview.png" alt="" onclick="toggleDropdown()">
-          <div id="poligono" onclick="girarPoligono()"></div>
-          <div id="dropdown-content">
+      <div id="imglogo" onmouseenter="userlogo()">
+        <img src="../img/1-removebg-preview.png" alt="">
+          <div id="poligono"></div>
+          <div id="dropdown-content" onmouseenter="userlogo()">
             <a href="#">Dados pessoais</a>
             <a href="#" onclick="atualizarDados()">Atualizar Dados Pessoais</a>
             <a href="#" onclick="alterarSenha()">Alterar Senha</a>
@@ -43,10 +43,18 @@
           </div>
       </div>
 
-      <div class="hamburger">
+      <div class="hamburger" onclick="userlogo2()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
+        <div id="dropdown-content2" onclick="userlogo2()">
+          <a href="#">Dados pessoais</a>
+          <a href="#">Atualizar Dados Pessoais</a>
+          <a href="#">Alterar Senha</a>
+          <a href="#">Pós-Graduação</a>
+          <a href="#">Autenticação de 2 fatores</a>
+          <a href="#">Sair</a>
+        </div>
     </div>
     </div>
   </div>

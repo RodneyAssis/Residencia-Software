@@ -1,6 +1,6 @@
 var rotacaoAtual = 0; // Variável para rastrear o estado atual da rotação
 
-function girarPoligono() {
+function userlogo() {
     var poligono = document.getElementById('poligono');
     
     // Inverte a rotação com base no estado atual
@@ -17,17 +17,16 @@ function girarPoligono() {
     }
 }
 
-function atualizarDados() {
-    alert("Opção: Atualizar Dados Pessoais");
-    // Adicione aqui a lógica para atualizar dados pessoais
+function userlogo2() {
+    var dropdownContent = document.getElementById("dropdown-content2");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
 }
 
-function alterarSenha() {
-    alert("Opção: Alterar Senha");
-    // Adicione aqui a lógica para alterar a senha
-}
-
-function posGraduacao() {
-    alert("Opção: Pós-Graduação");
-    // Adicione aqui a lógica para a opção de Pós-Graduação
+function reset() {
+    var dropdownContent = document.getElementById("dropdown-content2");
+    dropdownContent.style.display = "none";
 }
