@@ -356,8 +356,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  align-items: center;
-}
+    align-items: center;
+  }
+
 
 .imagem-container {
  flex: 0 0 calc(33.33% - 20px); /* Isso criará três colunas com algum espaço entre elas */
@@ -533,4 +534,52 @@ margin-bottom: 20px;
     width: 83vw;
     height: 200px;
   }
+}
+
+@media (max-width: 1920px) {
+
+  .corpo img{
+    width: 304px;
+    height: 303px;
   }
+
+  .corpo2 img{
+    width: 304px;
+    height: 303px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 304px;
+    height: 303px;
+    background: linear-gradient(to bottom, #0000FF, #000080); 
+    opacity: 0; 
+    transition: opacity 0.3s;
+    border-radius: 10%;
+    margin-right: 40px;
+    margin-left: 40px;
+    cursor: pointer;  
+  }
+
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 304px;
+    height: 303px;
+    background: linear-gradient(to bottom, #0000FF, #000080); 
+    opacity: 0; 
+    transition: opacity 0.3s;
+    border-radius: 10%;
+    margin-right: 65px;
+    margin-left: 65px;
+    cursor: pointer;  
+  }
+
+  .imagem-container {
+    margin-bottom: 50px;
+  }
+  
+}
