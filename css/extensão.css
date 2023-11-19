@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F7F7;
+    font-family: 'Inter';
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+
 /*INICIO CABEÇALHO */
 
 #header{
+    font-family: 'Inter';
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -10,27 +27,27 @@
     width: auto;
     height: 70px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-    
-    #cab-logo{
+  }
+  
+  #cab-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    }
-    
-    #logo img {
+  }
+  
+  #logo img {
     border-radius: 100%;
     height: 65px;
-    }
-    
-    #title{
+  }
+  
+  #title{
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
-    }
-    
-    #title p{
+  }
+  
+  #title p{
     margin-left: 20%;
     color: #FBFBFB;
     font-feature-settings: "salt";
@@ -45,181 +62,90 @@
     -2px 2px 0 #000,
     2px 2px 0 #000; /* Configuração do contorno */
     
-    }
-    
-    #title-smartphone{
+  }
+  
+  #title-smartphone{
     visibility: hidden;
-    }
-    
-    #menu-login {
+  }
+  
+  #menu-login {
     display: flex;
     flex-direction: row;
     align-items: center;
-    }
-    
-    
-    #menu a {
+  }
+  
+  
+  #menu a {
     align-items: center;
     color: #FBFBFB;
     text-decoration: none;
     font-size: 100%;
     font-family: 'Inter';
     padding: 0 10px
-    }
-    
-    #linhav {
+  }
+  
+  #linhav {
     margin: 0 15px 0 15px;
     border-left: 1px solid #ffffff; /* Largura e cor da linha vertical */
     height: 60px; /* Altura da linha vertical */
-    }
-    
-    #poligono {
-        width: 0;
-        height: 0;
-        border-left: 4px solid transparent; /* Lado esquerdo */
-        border-right: 4px solid transparent; /* Lado direito */
-        border-bottom: 6px solid #D9D9D9; /* Lado inferior e cor de preenchimento */
-    }
-    
-    #imglogo {
+  }
+  
+  #imglogo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    }
-    
-    #imglogo img {
+    cursor: pointer; /* Adiciona a seta do cursor para indicar clicabilidade */
+  }
+  
+  
+  #imglogo img {
     height: 55px;
-    }
-    
-    #poligono {
-    align-items: center;
-    margin-left: 3px;
-    }
-      
-    @media (max-width: 720px) {
-    #header{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding: 0 28px;
-    background-color: #234E98;
-    width: auto;
-    height: 50px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-    
-    #cabecalho {
-    display: flex;
-    flex-direction: row;
-    }
-    
-    #cab-logo {
-    margin: 0;
-    padding: 0;
-    padding-left: 7px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-    
-    #cab-logo{
-    height: 100%;
-    }
-    
-    #menu {
-    display: none;
-    }
-    }
-    
-    @media (max-width: 720px) {
-    /*Inicio cabeçalho smartphone*/
-    #header{
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 28px;
-    background-color: #234E98;
-    width: auto;
-    height: 55px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    align-items: center;
-    }
-    
-    
-    #cab-logo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    }
-    
-    #menu {
-    display: none;
-    }
-    
-    #cab-logo {
-    height: 50px;
-    }
-    
-    #cab-logo img {
-    height: 50px;
-    }
-    
-    #title{
-    display: none;
-    }
-    
-    #title-smartphone{
-    visibility:visible;
-    }
-    
-    #title-smartphone p{
-    display: flex;
-    color: #FBFBFB;
-    font-feature-settings: "salt";
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-shadow: 
-    -2px -2px 0 #000,  
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000; /* Configuração do contorno */
-    }
-    
-    #linhav{
-    display: none;
-    }
-    
-    #imglogo {
-    display: none;
-    }
-    
-    .hamburger {
-    width: 50px;
-    height: 26px;
-    display: flex;
-    padding: 0 10px;
-    flex-direction: column;
+  }
+  
+  #poligono {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #D9D9D9;
     cursor: pointer;
-    }
-    
-    .bar {
-    width: 100%;
-    height: 10px;
-    background-color: #F8F7F7;
-    margin: 3px 0;
-    padding: 0.5px 0;
-    border-radius: 2px;
-    }
-    }
-    /*Fim cabecalho*/
-    
+    transition: transform 0.3s, border-bottom 0.3s;
+  }
+  
+  #dropdown-content {
+    top: 70px;
+    right: 0px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: top 0.3s ease;
+  }
+  
+  #dropdown-content2 {
+    display: none;
+  }
+  
+  #dropdown-content a {
+    font-size: 13px;
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  /*FIM CABEÇALHO*/
+
+
+  /*INICIO CORPO*/
+
+   
     /*Barra das atividades inscritas*/
     #atividadeInscrita{
         margin-top: 5%;
@@ -324,5 +250,117 @@
     .accordion button:hover { background-color:#0762c2; color:#eee003; }
 
     /* direitos autorais do acordeon: https://www.loopnerd.com.br/codigos-css-prontos/como-fazer-um-accordion-com-html-e-css/*/
-    /*Fim do acordeon/*
+    /*Fim do acordeon*/
     
+
+    @media (max-width: 720px) {
+    /*Inicio cabeçalho smartphone*/
+    #header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 28px;
+    background-color: #234E98;
+    width: auto;
+    height: 55px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    }
+    
+    
+    #cab-logo {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    #menu {
+    display: none;
+    }
+    
+    #cab-logo {
+    height: 50px;
+    }
+    
+    #cab-logo img {
+    height: 50px;
+    }
+    
+    #title{
+    display: none;
+    }
+    
+    #title-smartphone{
+    visibility:visible;
+    }
+    
+    #title-smartphone p{
+    display: flex;
+    color: #FBFBFB;
+    font-feature-settings: "salt";
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; /* Configuração do contorno */
+    }
+    
+    #linhav{
+    display: none;
+    }
+    
+    #imglogo {
+    display: none;
+    }
+    
+    .hamburger {
+    width: 50px;
+    height: 26px;
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    cursor: pointer;
+    }
+    
+    .bar {
+    width: 100%;
+    height: 10px;
+    background-color: #F8F7F7;
+    margin: 3px 0;
+    padding: 0.5px 0;
+    border-radius: 2px;
+    }
+
+    
+#dropdown-content2 {
+    top: 55px;
+    right: 0px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: top 0.3s ease;
+  }
+  
+  #dropdown-content2 a {
+    font-size: 13px;
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #dropdown-content2 a:hover {
+    background-color: #f1f1f1;
+  }
+}
+    /*Fim cabecalho*/
