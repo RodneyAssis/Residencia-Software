@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F8F7F7;
+  font-family: 'Inter';
 }
 
 p {
@@ -15,6 +16,7 @@ p {
 /*INICIO CABEÇALHO */
 
 #header{
+  font-family: 'Inter';
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -120,6 +122,10 @@ p {
   transition: top 0.3s ease;
 }
 
+#dropdown-content2 {
+  display: none;
+}
+
 #dropdown-content a {
   font-size: 13px;
   color: black;
@@ -131,6 +137,7 @@ p {
 #dropdown-content a:hover {
   background-color: #f1f1f1;
 }
+
 
 /*FIM CABEÇALHO*/
 
@@ -304,7 +311,6 @@ p {
       border-radius: 2px;
   }
 
-  
 #dropdown-content2 {
   top: 55px;
   right: 0px;

@@ -12,12 +12,12 @@
   <div id="header">
     <div id="cab-logo">
       <div id="logo">
-        <img src="../img/imgoutrosservicos/magister.png" alt="" srcset="">
+        <img src="../img/imglogin/magister.png" alt="" srcset="">
       </div>
       <div id="title">
         <p>Graduação</p>
       </div>
-    </div>
+    </div> 
     <div id="title-smartphone">
       <p>Graduação</p>
     </div>
@@ -28,18 +28,38 @@
         <a href="../html/extensao.html">Extensão</a>
         <a href="">Polo EAD</a>
       </div>
-      
+
       <div id="linhav"></div>
 
-      <div id="imglogo">
+      <div id="imglogo" onmouseenter="userlogo()">
         <img src="../img/1-removebg-preview.png" alt="">
-        <div id="poligono"></div>
+          <div id="poligono"></div>
+          <div id="dropdown-content" onmouseenter="userlogo()">
+            <a href="#">Dados pessoais</a>
+            <a href="#" onclick="atualizarDados()">Atualizar Dados Pessoais</a>
+            <a href="#" onclick="alterarSenha()">Alterar Senha</a>
+            <a href="#" onclick="posGraduacao()">Pós-Graduação</a>
+            <a href="#" onclick="posGraduacao()">Autenticação de 2 fatores</a>
+            <a href="#" onclick="posGraduacao()">Sair</a>
+          </div>
       </div>
-      <div class="hamburger">
+
+      <div class="hamburger" onclick="userlogo2()">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-      </div>
+        <div id="dropdown-content2" onclick="userlogo()">
+          <a style="font-weight: bold;" href="../html/portal.html">Portal</a>
+          <a style="font-weight: bold;" href="../html/protocolo.html">Protocolo</a>
+          <a style="font-weight: bold;" href="../html/extensao.html">Extensão</a>
+          <a style="font-weight: bold;" href="#">Polo EAD</a>
+          <a href="#">Atualizar Dados Pessoais</a>
+          <a href="#">Alterar Senha</a>
+          <a href="#">Pós-Graduação</a>
+          <a href="#">Autenticação de 2 fatores</a>
+          <a href="#">Sair</a>
+        </div>
+    </div>
     </div>
   </div>
 
