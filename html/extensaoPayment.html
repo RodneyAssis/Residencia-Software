@@ -128,6 +128,15 @@ function reset() {
     dropdownContent.style.display = "none";
 }
 
+function updateDropdownVisibility() {
+    var dropdown = document.getElementById('dropdown-content2');
+    if (window.innerWidth < 768) { // Altere o valor conforme necessário
+        dropdown.style.display = 'none';
+    } else {
+        dropdown.style.display = 'block'; // ou 'flex' ou 'inline', dependendo do seu layout
+    }
+}
+
 </script>
       
 </body>
