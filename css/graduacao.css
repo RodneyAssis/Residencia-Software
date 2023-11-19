@@ -188,6 +188,12 @@ body {
     cursor: pointer;  
   }
 
+  .imagem-container {
+    position: relative;
+    transition: filter 0.3s; 
+    margin-top: 25px;
+  }
+
   .imagem-container2 {
     position: relative;
     transition: filter 0.3s; 
