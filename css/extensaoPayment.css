@@ -138,6 +138,10 @@ p {
     background-color: #f1f1f1;
   }
       
+
+  #dropdown-content2 a {
+    display: none;
+  }
   /*FIM CABEÇALHO*/
 
 /* Estilos para o formulário de inscrição */
