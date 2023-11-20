@@ -147,3 +147,18 @@ function updateDropdownVisibility() {
       dropdown.style.display = 'block'; // ou 'flex' ou 'inline', dependendo do seu layout
   }
 }
+
+let lastScrollTop = 0;
+const menuFlutuante = document.getElementById('menuFlutuante');
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // O usuário está rolando para baixo
+    menuFlutuante.style.top = `-${menuFlutuante.offsetHeight}px`;
+  } 
+  
+
+  lastScrollTop = scrollTop;
+});
