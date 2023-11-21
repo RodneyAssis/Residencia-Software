@@ -227,6 +227,65 @@ p {
   border-radius: 12px;
 }
 
+#btn:hover {
+  background-color: red;
+}
+
+.janela-modal {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  width: 60;
+  min-width: 450px;
+  min-height: 200px;
+  background-color: #ffffff96;
+  backdrop-filter: blur(10px);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.fechar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.janela-modal.abrir {
+  display: flex;
+}
+
+@keyframes abrirmodal {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.abrir .modal {
+  animation: abrirmodal 0.5s;
+}
 
 @media (max-width: 720px) {
   /*Inicio cabeçalho smartphone*/
