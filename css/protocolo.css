@@ -342,3 +342,87 @@ p {
 
   /*Fim cabecalho*/
 }
+
+/*inicio do acordion*/
+.accordion{
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+  box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+  }
+  
+  .accordion input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity:0;
+  visibility: 0;
+  }
+  
+  .accordion h1{
+  background:#007cff;
+  color:white;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+  .accordion h1:hover { background-color:#0762c2; color:#eee003; }
+  
+  .accordion label::before{
+  content:"";
+  display: inline-block;
+  border: 8px solid transparent;
+  border-left:12px solid white;
+  }
+  
+  .accordion label{
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  }
+  
+  .accordion div.texto{
+  max-height:0px;
+  overflow: hidden;
+  transition:max-height 0.5s;
+  background-color: white;
+  box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .accordion div.texto p {
+  padding:1em;
+  position: relative;
+  z-index: 1;
+  }
+  
+  .accordion input:checked ~ h1 label::before{
+  
+  border-left:8px solid transparent;
+  border-top:12px solid white;
+  margin-top:12px;
+  margin-right:10px;
+  }
+  
+  .accordion input:checked ~ h1 ~ div.texto{ max-height:1400px; }
+  
+  .accordion a{ color:#2d81da; }
+
+  .accordion button {
+      background:#007cff;
+      color:white;
+      font-family:'Arial', sans-serif;
+      font-size: 15px;
+      padding: 5px;
+      border-radius: 10px;
+      border-color: #F8F7F7;
+      position: relative;
+      margin-left: 80%;
+      transition: 0.5s;
+  }
+  .accordion button:hover { background-color:#0762c2; color:#eee003; }
+  /*fim do acordion*/
