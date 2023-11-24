@@ -34,13 +34,17 @@ function mostrarMenu(event) {
   menuFlutuante.style.top = event.clientY + 'px'; // Define a posição vertical com base na posição do cursor
 }
 
-// Fecha o menu flutuante se clicar fora dele
-document.addEventListener('click', function(event) {
-  var menuFlutuante = document.getElementById('menuFlutuante');
-  if (event.target.closest('.imagem-container') === null) {
-    menuFlutuante.style.display = 'none';
-  }
+const menuFlutuante = document.getElementById('menuFlutuante');
+
+window.addEventListener('scroll', () => {
+  // Oculta o menu flutuante ao rolar
+  menuFlutuante.style.display = 'none'
 });
+
+function fecharMenu() {
+  var menuFlutuante = document.getElementById('menuFlutuante');
+  menuFlutuante.style.display = 'none';
+}
 
 function mostrarMenu2(event) {
   event.stopPropagation(); // Impede a propagação do evento para o corpo do documento
@@ -50,13 +54,18 @@ function mostrarMenu2(event) {
   menuFlutuante2.style.top = event.clientY + 'px'; // Define a posição vertical com base na posição do cursor
 }
 
-// Fecha o menu flutuante se clicar fora dele
-document.addEventListener('click', function(event) {
-  var menuFlutuante2 = document.getElementById('menuFlutuante2');
-  if (event.target.closest('.imagem-container') === null) { 
-    menuFlutuante2.style.display = 'none';
-  }
+
+const menuFlutuante2 = document.getElementById('menuFlutuante2');
+
+window.addEventListener('scroll', () => {
+  // Oculta o menu flutuante ao rolar
+  menuFlutuante2.style.display = 'none'
 });
+
+function fecharMenu2() {
+  var menuFlutuante2 = document.getElementById('menuFlutuante2');
+  menuFlutuante2.style.display = 'none';
+}
 
 function mostrarMenu3(event) {
   event.stopPropagation(); // Impede a propagação do evento para o corpo do documento
@@ -66,13 +75,18 @@ function mostrarMenu3(event) {
   menuFlutuante3.style.top = event.clientY + 'px'; // Define a posição vertical com base na posição do cursor
 }
 
-// Fecha o menu flutuante se clicar fora dele
-document.addEventListener('click', function(event) {
-  var menuFlutuante3 = document.getElementById('menuFlutuante3');
-  if (event.target.closest('.imagem-container') === null) { 
-    menuFlutuante3.style.display = 'none';
-  }
+
+const menuFlutuante3 = document.getElementById('menuFlutuante3');
+
+window.addEventListener('scroll', () => {
+  // Oculta o menu flutuante ao rolar
+  menuFlutuante3.style.display = 'none'
 });
+
+function fecharMenu3() {
+  var menuFlutuante3 = document.getElementById('menuFlutuante3');
+  menuFlutuante3.style.display = 'none';
+}
 
 function mostrarMenu4(event) {
   event.stopPropagation(); // Impede a propagação do evento para o corpo do documento
@@ -82,13 +96,18 @@ function mostrarMenu4(event) {
   menuFlutuante4.style.top = event.clientY + 'px'; // Define a posição vertical com base na posição do cursor
 }
 
-// Fecha o menu flutuante se clicar fora dele
-document.addEventListener('click', function(event) {
-  var menuFlutuante4 = document.getElementById('menuFlutuante4');
-  if (event.target.closest('.imagem-container') === null) { 
-    menuFlutuante4.style.display = 'none';
-  }
+
+const menuFlutuante4 = document.getElementById('menuFlutuante4');
+
+window.addEventListener('scroll', () => {
+  // Oculta o menu flutuante ao rolar
+  menuFlutuante4.style.display = 'none'
 });
+
+function fecharMenu4() {
+  var menuFlutuante4 = document.getElementById('menuFlutuante4');
+  menuFlutuante4.style.display = 'none';
+}
 
 function mostrarMenu5(event) {
   event.stopPropagation(); // Impede a propagação do evento para o corpo do documento
@@ -98,13 +117,18 @@ function mostrarMenu5(event) {
   menuFlutuante5.style.top = event.clientY + 'px'; // Define a posição vertical com base na posição do cursor
 }
 
-// Fecha o menu flutuante se clicar fora dele
-document.addEventListener('click', function(event) {
-  var menuFlutuante5 = document.getElementById('menuFlutuante5');
-  if (event.target.closest('.imagem-container') === null) { 
-    menuFlutuante5.style.display = 'none';
-  }
+
+const menuFlutuante5 = document.getElementById('menuFlutuante5');
+
+window.addEventListener('scroll', () => {
+  // Oculta o menu flutuante ao rolar
+  menuFlutuante5.style.display = 'none'
 });
+
+function fecharMenu5() {
+  var menuFlutuante5 = document.getElementById('menuFlutuante5');
+  menuFlutuante5.style.display = 'none';
+}
 
 var rotacaoAtual = 0; // Variável para rastrear o estado atual da rotação
 
