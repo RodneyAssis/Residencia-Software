@@ -2,9 +2,9 @@ function abrirModal() {
     const modal = document.getElementById("janela-modal")
     modal.classList.add("abrir")
 
-    modal.addEventListener("Click", (e) => {
-        if(e.target.id == "fechar" || e.target.id == "janela-modal"){
-            modal.classList.remove("abrir")
-        }
-    })
+    if (modal.style.display === "none") {
+        modal.style.display = "flex";
+    } else {
+        modal.style.display = "none";
+    }
 }
