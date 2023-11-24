@@ -147,7 +147,6 @@ p {
 /*INICIO CORPO*/
 
 #corpo {
-  border: solid red 2px;
   width: 100%;
   height: 90vh;
 }
@@ -341,6 +340,19 @@ p {
 }
 
   /*Fim cabecalho*/
+  /*Inicio corpo*/
+  #barradepesquisa {
+    width: auto;
+    margin: 20px 20px 10px 20px;
+  }
+
+  #quadrocomentario {
+    width: auto;
+  }
+
+  #processos input:hover {
+    background-color: #1958c5;
+  }
 }
 
 /*inicio do acordion*/
