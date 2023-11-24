@@ -466,6 +466,8 @@ p {
   }
 
   .modal2 {
+    margin: 0;
+    padding: 0;
     width: 380px;
     height: 600px;
   }
