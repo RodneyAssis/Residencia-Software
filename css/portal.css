@@ -462,12 +462,12 @@ p {
   .janela-modal {
     margin: 0;
     padding: 0;
-    min-width: none;
     height: 100vh;
   }
 
   .modal2 {
     width: 380px;
+    height: 600px;
   }
 
   .modal2 h1 {
