@@ -260,7 +260,7 @@ p {
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 600px;
+  height: 700px;
   background-color: #ffffff96;
   backdrop-filter: blur(10px);
   padding: 50px 100px;
@@ -462,12 +462,12 @@ p {
   .janela-modal {
     margin: 0;
     padding: 0;
-    min-width: none;
     height: 100vh;
   }
 
   .modal2 {
     width: 380px;
+    height: 600px;
   }
 
   .modal2 h1 {
