@@ -260,7 +260,7 @@ p {
   display: flex;
   flex-direction: column;
   width: auto;
-  height: 700px;
+  height: 600px;
   background-color: #ffffff96;
   backdrop-filter: blur(10px);
   padding: 50px 100px;
