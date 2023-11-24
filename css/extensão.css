@@ -235,7 +235,7 @@ body {
     margin-right:10px;
     }
     
-    .accordion input:checked ~ h1 ~ div.texto{ max-height:1200px; }
+    .accordion input:checked ~ h1 ~ div.texto{ max-height:100%; }
     
     .accordion a{ color:#2d81da; }
 
