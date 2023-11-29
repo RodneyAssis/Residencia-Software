@@ -227,92 +227,6 @@ p {
   border-radius: 12px;
 }
 
-/*Inicio tutorial*/
-.btn {
-  color: #D9D9D9;
-  background-color: #234E98;
-  border-radius: 100%;
-  padding: 10px 17px;
-  right: 50px;
-  bottom: 40px;
-  position: absolute;
-}
-
-.btn:hover {
-  background-color: #2d6ad3;
-  color: #D9D9D9;
-}
-
-.janela-modal {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #00000080;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
-
-.modal2 {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: 700px;
-  background-color: #ffffff96;
-  backdrop-filter: blur(10px);
-  padding: 50px 100px;
-  border-radius: 20px;
-}
-
-.modal2 video {
-  margin: 5px;
-}
-
-.video {
-  display: flex;
-  align-items: center;
-}
-
-.video h4 {
-  margin-left: 20px;
-}
-
-.fechar {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 0;
-  background-color: #234E98;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.janela-modal.abrir {
-  display: flex;
-}
-
-@keyframes abrirmodal {
-  from {
-    opacity: 0;
-    transform: translate3d(-20px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.abrir .modal {
-  animation: abrirmodal 0.5s;
-}
-
 @media (max-width: 720px) {
   /*Inicio cabeçalho smartphone*/
     #header{
@@ -457,36 +371,5 @@ p {
   #quadroavisos {
     justify-content: center;
     height: 220px;
-  }
-
-  .janela-modal {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-  }
-
-  .modal2 {
-    margin: 0;
-    padding: 0;
-    width: 380px;
-    height: 600px;
-  }
-
-  .modal2 h1 {
-    margin-bottom: 30px;
-  }
-
-  .video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video video {
-    width: 200px;
-  }
-
-  .video h4{
-    font-size: 16px;
   }
 }

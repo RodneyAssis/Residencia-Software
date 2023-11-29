@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graduação</title>
+  <title>Magister - Graduação</title>
+  <link rel="shortcut icon" href="../img/imglogin/magister.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/graduacao.css">
+  <link rel="stylesheet" href="../css/tutorial.css">
 </head>
 
 <body>
@@ -40,7 +42,7 @@
             <a href="#" onclick="alterarSenha()">Alterar Senha</a>
             <a href="#" onclick="posGraduacao()">Pós-Graduação</a>
             <a href="#" onclick="posGraduacao()">Autenticação de 2 fatores</a>
-            <a href="../html/outrosservicos.html" onclick="posGraduacao()">Sair</a>
+            <a href="../html/login.html">Sair</a>
           </div>
       </div>
 
@@ -57,7 +59,7 @@
           <a href="#">Alterar Senha</a>
           <a href="#">Pós-Graduação</a>
           <a href="#">Autenticação de 2 fatores</a>
-          <a href="#">Sair</a>
+          <a href="../html/login.html">Sair</a>
         </div>
     </div>
     </div>
@@ -154,7 +156,15 @@
       </div>
     </div>
   </div>
+
+  <!--Início do tutorial-->
+  <div onclick="abrialerta()" class="btn">?</div>
+  <!--Fim do tutorial-->
+
 </body>
 <script src="../js/graduacao.js"></script>
+<script src="../js/tutorial.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </html>
